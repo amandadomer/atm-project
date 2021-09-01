@@ -1,11 +1,15 @@
 "use strict";
 
+const bankInfo = require("./account");
 
-switch
+console.log(bankInfo);
 
+function getBalance {
+    bankInfo.balance;
+}
 
-function getBalance 
+function withdraw (){
+}
 
-function withdraw
-
-function deposit
+function deposit (){
+}

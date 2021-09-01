@@ -3,4 +3,6 @@
 let pin = 3579;
 let balance = 573.84;
 
-let userEntry = 
+module.exports.pin = pin;
+module.exports.balance = balance;
+console.log(module);
