@@ -5,19 +5,19 @@ const prompt = require('prompt-sync')();
 const account = require("./account");
 
 function getBalance () {
-    console.log("Your  balance is: $" + account.balance);
+    console.log("Your current balance is: $" + account.balance);
 }
 
 function withdraw (){
-    let userEntry = parseInt(prompt ("Enter the amount you want to withdraw: "));
+    let userEntry = parseInt(prompt ("Enter the amount you want to withdraw: $"));
     account.balance = account.balance - userEntry;
         console.log ("Your new balance is $" + account.balance);
 }
 
 function deposit (){
-    let userEntry = parseInt(prompt ("Enter the amount you want to deposit: "));
+    let userEntry = parseInt(prompt ("Enter the amount you want to deposit: $"));
     account.balance = account.balance + userEntry;
-        console.log ("Your new balance is $"+ account.balance);
+        console.log ("Your new balance is $" + account.balance);
 }
 
 function validatePin (){

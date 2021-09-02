@@ -10,8 +10,9 @@ function runProgram(){
 }
 
 function atmMenu (){
-let menu = prompt ("Please choose from one of the following:\n'1. Get Balance'\n'2. Withdraw'\n'3. Deposit'\n'4. Exit'")
-    switch (menu){
+    console.log("Please choose from one of the following:\n'1. Get Balance'\n'2. Withdraw'\n'3. Deposit'\n'4. Exit'")
+    let menu = prompt () 
+switch (menu){
         case "1":
         atm.balance();
         atmMenu();
