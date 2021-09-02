@@ -8,9 +8,9 @@ function getBalance () {
 }
 
 function withdraw (){
-    let userEntry = pareseInt(prompt ("Enter the amount you want to withdraw"));
-    let withdrawResult = account.balance - userEntry;
-        console.log ("Your new balance is $" + withdrawResult);
+    let userEntry = parseInt(prompt ("Enter the amount you want to withdraw"));
+    account.balance = account.balance - userEntry;
+        console.log ("Your new balance is $" + account.balance);
 }
 
 function deposit (){
