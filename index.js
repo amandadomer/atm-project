@@ -1,24 +1,28 @@
 "use strict";
 
-const atm = require("./atm");
-    console.log(atm);
+const prompt = require('prompt-sync')();
 
-atm.validate;
+const atm = require("./atm");
+
+function runProgram(){
+    atm.validatePin();
+    atmMenu();
+}
 
 function atmMenu (){
-let menu = prompt ("Please choose from one of the following: '1. Get Balance'\n'2. Withdraw'\n'3.Deposit'\n'4. Exit'")
+let menu = prompt ("Please choose from one of the following:\n'1. Get Balance'\n'2. Withdraw'\n'3. Deposit'\n'4. Exit'")
     switch (menu){
         case "1":
-        atm.balance;
-        atmMenu ();
+        atm.balance();
+        atmMenu();
         break;
     case "2":    
-        atm.withdraw;
-        atmMenu ();
+        atm.withdraw();
+        atmMenu();
         break;
     case "3":
-        atm.deposit;
-        atmMenu ();
+        atm.deposit();
+        atmMenu();
         break;    
     case "4":
         break;
@@ -28,3 +32,4 @@ let menu = prompt ("Please choose from one of the following: '1. Get Balance'\n'
     break;
     }
 }                                    
+runProgram ();
