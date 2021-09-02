@@ -29,7 +29,7 @@ switch (menu){
         break;
     default:
         console.log ("Invalid entry")
-        menu;
+        atmMenu();
     break;
     }
 }                                    
